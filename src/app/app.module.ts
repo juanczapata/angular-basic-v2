@@ -11,12 +11,18 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MainTopToolbarComponent } from './main-top-toolbar/main-top-toolbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { MatButtonModule } from '@angular/material/button';
+import { DemoMaterialModule } from './material-module';
+import { CentralContainerComponent } from './central-container/central-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainItemGridComponent,
-    MainTopToolbarComponent
+    MainTopToolbarComponent,
+    LeftMenuComponent,
+    CentralContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSidenavModule,
     MatGridListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule,
+    DemoMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

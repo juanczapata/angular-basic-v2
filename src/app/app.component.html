@@ -2,7 +2,9 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav-content>
     <button mat-raised-button color="primary" (click)="mysidenav.toggle()">Toogle Sidebar</button>
-    <app-main-item-grid></app-main-item-grid>
+    <app-central-container></app-central-container>
   </mat-sidenav-content>
-  <mat-sidenav mode="side" #mysidenav> Side  Nav</mat-sidenav>
+  <mat-sidenav mode="side" #mysidenav>
+    <app-left-menu></app-left-menu>
+  </mat-sidenav>
 </mat-sidenav-container>
